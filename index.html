@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Profile Page</title>
-  </head>
-  <body>
-    <header class="header-container">
-      <h1>ADEDEJI TOBI ISAAC</h1>
-      <div class="contact-info">
-        <div class="info-item">
-          <img src="/images/download.png" alt="email-icon" height="20px" />
-          <span>tobiisaac428@gmail.com</span>
-          <!-- <a href="mailto:tobiisaac428@gmail.com"></a> -->
-        </div>
-        <div class="info-item">
-          <img src="/images/images.png" alt="address-icon" height="20px" />
-          <span>25, Jimoh Shobowale Street, Magodo Lagos.</span>
-        </div>
-        <div class="info-item">
-          <img
-            src="/images/phone-icon.png"
-            alt="phone-icon"
-            height="20px"/>
-            <span>+2348136596295</span>
-          <!-- <a href="tel:08136596295"></a> -->
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <title>My Profile Page</title>
+</head>
+<body>
+  <header class="header-container">
+    <h1>ADEDEJI TOBI ISAAC</h1>
+    <div class="contact-info">
+      <div class="info-item">
+        <img src="/images/download.png" alt="email-icon" height="20" />
+        <span>tobiisaac428@gmail.com</span>
       </div>
-    </header>
-    <div class="personal-career-container">
+      <div class="info-item">
+        <img src="/images/images.png" alt="address-icon" height="20" />
+        <span>25, Jimoh Shobowale Street, Magodo Lagos.</span>
+      </div>
+      <div class="info-item">
+        <img src="/images/phone-icon.png" alt="phone-icon" height="20" />
+        <span>+2348136596295</span>
+      </div>
+    </div>
+  </header>
+  <div class="personal-career-container">
     <div class="personal-info-container">
-        <p class="personal-info">D.O.B: 20th December 1990 <br>
-        State of Origin: Osun State <br>
-        SEX: Male</p>
+      <p class="personal-info">
+        D.O.B: 20th December 1990 <br />
+        State of Origin: Osun State <br />
+        SEX: Male
+      </p>
     </div>
     <div class="career-objective-container">
-        <p><strong>CAREER OBJECTIVE:</strong> <br> 
-        To work in a dynamic organization, assist organization achieve its set goals, contribute to its growth, attain professional distinction and proficiency and become a proven success in a dynamic and challenging environment.</p>
+      <p>
+        <strong>CAREER OBJECTIVE:</strong> <br />
+        To work in a dynamic organization, assist organization achieve its set
+        goals, contribute to its growth, attain professional distinction and
+        proficiency and become a proven success in a dynamic and challenging
+        environment.
+      </p>
     </div>
-</div>
+  </div>
+  <div class="Education-container">
+    <table class="table1">
+      <caption><b>EDUCATION</b></caption>
+      <tr>
+        <th>Level</th>
+        <th>Institution</th>
+        <th>Qualification</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>Higher National Diploma</td>
+        <td>Yaba College of Technology, Yaba, Lagos State</td>
+        <td>Computer Science</td>
+        <td>2014-2016</td>
+      </tr>
+      <tr>
+        <td>Senior School Certificate Examination (SSCE)</td>
+        <td>New Lagos College, Onipanu, Lagos</td>
+        <td>WAEC</td>
+        <td>2002-2008</td>
+      </tr>
+    </table>
+  </div>
+  <div class="work-history">
+    <table class="table2">
+      <caption><b>WORK HISTORY</b></caption>
+      <tr>
+        <th>Organization</th>
+        <th>Role</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>UKEAS NIGERIA</td>
+        <td>Conversion Officer</td>
+        <td>2020-2022</td>
+      </tr>
+      <tr>
+        <td>INTAKE EDUCATION</td>
+        <td>Advisor Assistant</td>
+        <td>2022-2023</td>
+      </tr>
+    </table>
+  </div>
+  <div class="slider">
+    <div><img src="images/image (1).jpg" alt="Tobi with friends" /></div>
+    <div><img src="images/image(2).jpg" alt="Tobi at work" /></div>
+    <div><img src="images/image (3).jpg" alt="Tobi at training" /></div>
+    <div><img src="images/image (4).jpg" alt="Tobi at training" /></div>
+    <div><img src="images/image (5).jpg" alt="Tobi at training" /></div>
 
-    
-  </body>
+  </div>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Slick Slider JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
+</body>
 </html>

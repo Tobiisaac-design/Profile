@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  /* background-color: #96D4D4; */
 }
 .header-container {
   background-color: deepskyblue;
@@ -54,89 +55,130 @@ h1 {
 
 .personal-info-container,
 .career-objective-container {
-    flex: 1; /* Ensure both containers take equal space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-    min-height: 200px; /* Ensure a minimum height */
+  flex: 1; /* Ensure both containers take equal space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 200px; /* Ensure a minimum height */
 }
 
 .personal-info-container {
-    background-color: rgb(248, 70, 6);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: white;
+  background-color: rgb(248, 70, 6);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
 }
 
 .personal-info-container p {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-left: 10px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-left: 10px;
 }
 
 .career-objective-container {
-    background-color: rgb(5, 219, 5);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+  background-color: rgb(5, 219, 5);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .career-objective-container p {
-    text-align: center;
-    margin-block-start: 5px;
-    margin-block-end: 0px;
-    line-height: 1;
-    max-width: 100%;  
+  text-align: center;
+  margin-block-start: 5px;
+  margin-block-end: 0px;
+  line-height: 1;
+  max-width: 100%;
 }
 
+.Education-container,
+.work-history {
+  background-color: deepskyblue;
+  display: flex;
+  width: 100%;
+}
 
+caption{
+  font-style: bold;
+}
+table {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:14px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.table1 td {
+  color: #000099;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.table2 td {
+  color: #000099;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #000;
+}
+ .slider {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
 
 /* Extra Small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   .contact-info {
     flex-direction: column;
-     margin-top: 10px;
-  
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .contact-info {
-    flex-direction: column;
     margin-top: 10px;
   }
-  
-} 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  h1 {
-    text-align: center;
-    flex-direction: column;
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .contact-info {
+      flex-direction: column;
+      margin-top: 10px;
+    }
   }
-  .contact-info {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10px;
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+      text-align: center;
+      flex-direction: column;
+    }
+    .contact-info {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .personal-career-container {
+      flex-direction: column;
+    }
+
+    .personal-info-container,
+    .career-objective-container {
+      width: 100%;
+    }
+
+    .career-objective-container p {
+      text-align: center;
+    }
   }
 
-  .personal-career-container {
-    flex-direction: column;
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+      width: 100%;
+      margin: auto;
+    }
   }
-
-  .personal-info-container,
-  .career-objective-container {
-    width: 100%;
-  }
-
-  .career-objective-container p {
-    text-align: center;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .container {
-    width: 100%;
-    margin: auto;
-  }
-}
 }
